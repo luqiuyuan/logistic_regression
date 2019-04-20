@@ -5,7 +5,7 @@ import glob
 
 DIMENSION_INPUT = 49152
 NUM_ITERATIONS = 100
-m = 10 # Number of samples
+m = 20 # Number of samples
 alpha = 0.001 # Learning rate
 SIZE_TESTING = 10 # Size of testing dataset
 
