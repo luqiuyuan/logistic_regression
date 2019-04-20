@@ -9,6 +9,7 @@ m = 20 # Number of samples
 alpha = 0.001 # Learning rate
 SIZE_TESTING = 10 # Size of testing dataset
 
+# Activation function
 def sigmoid(x):
     return 1 / (1 + np.exp(-x))
 
@@ -35,19 +36,23 @@ def readGroundTruth(path):
 def initializeParametersZeros(dimension):
     return (np.zeros((dimension, 1)), 0)
 
+# Initialize parameters to small random numbers
 def initializeParametersRandom(dimension):
     return (np.random.random((dimension, 1)) * 0.0001, 0)
 
+# Forward propagation
 def calculateForwardPropagatation(X, w, b):
     Z = w.T.dot(X) + b
     A = sigmoid(Z)
     return A
 
+# Backward propagation
 def calculateBackwardPropagation(X, Y, A):
     dw = X.dot((A - Y).T) / m
     db = (np.sum((A - Y), axis=1) / m)[0]
     return (dw, db)
 
+# Cost of a training iteration
 def calculateCost(Y, A):
     return -(Y.dot(np.log(A.T)) + (1 - Y).dot(np.log(1 - A.T))) / m
 
@@ -62,6 +67,7 @@ Y = readGroundTruth("./dataset/training/data.txt")
 # (w, b) = initializeParametersZeros(DIMENSION_INPUT)
 (w, b) = initializeParametersRandom(DIMENSION_INPUT)
 
+# Training iterations
 Js = np.zeros((0))
 for i in range(0, NUM_ITERATIONS):
     A = calculateForwardPropagatation(X, w, b)
