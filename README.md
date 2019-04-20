@@ -16,4 +16,4 @@
 ![methodology1](https://ibin.co/4eNPEz11jRGt.png)
 ![methodology2](https://ibin.co/4eNd1DBefChZ.png)
 ![methodology3](https://ibin.co/4eNPm4udlstf.png)
-![methodology4](https://ibin.co/4eNRC7jV0C8S.png)
+![methodology4](https://ibin.co/4eOMzRyZpJWK.png)
