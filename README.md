@@ -12,6 +12,7 @@
 
 ## Methodology
 
+![methodology0](https://ibin.co/4eNQWbBOnrNE.jpg)
 ![methodology1](https://ibin.co/4eNPEz11jRGt.png)
 ![methodology2](https://ibin.co/4eNPZHFpNTMh.png)
 ![methodology3](https://ibin.co/4eNPm4udlstf.png)
