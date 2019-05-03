@@ -79,7 +79,7 @@ for i in range(0, NUM_ITERATIONS):
 
 # Plot
 fig = plt.figure()
-plt.plot(np.arange(100), Js, label="Cost")
+plt.plot(np.arange(NUM_ITERATIONS), Js, label="Cost")
 plt.xlabel("Iterations")
 plt.ylabel("Cost")
 plt.title("Training")
